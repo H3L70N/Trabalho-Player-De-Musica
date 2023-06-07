@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".AdicionarCategoria" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="344dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/custom_border"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/fenix"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Criar Nova Categoria"
+        android:textColor="#EFEDED"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:fontFamily="@font/fenix"
+        android:background="@drawable/custom_border"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textColorHint="@color/black"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="Escreva o nome da Categoria" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fenix"
+        android:textSize="16sp"
+        android:text="Submeter"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/submeter"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/fenix"
+        android:text="Selecione as musicas da categoria:"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="6dp"
+        android:background="@drawable/custom_border2"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/lista"
+            android:dividerHeight="3dp"
+            android:divider="@color/black"
+           android:backgroundTint="@color/white"
+            android:background="@drawable/custom_border"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
